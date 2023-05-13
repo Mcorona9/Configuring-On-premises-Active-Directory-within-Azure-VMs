@@ -15,10 +15,10 @@
 
 
 <p>
-<img src="https://i.imgur.com/upyqEZc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JfZE9ed.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-As our initial action, we intend to generate a pair of virtual machines, each running a different operating system. One virtual machine will utilize the Microsoft operating system, while the other will run on the Linux operating system.
+As our fisrt step in this lab we will be creating 2 virtual machines one will host our domain controller and the other will be the client that gets integrated.
 </p>
 <br />
 
