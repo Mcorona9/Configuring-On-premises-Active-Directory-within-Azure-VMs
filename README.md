@@ -1,5 +1,19 @@
 # Configuring-On-premises-Active-Directory-within-Azure-VMs
 
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines)
+- Remote Desktop
+- Various Command-Line Tools
+
+
+
+<h2>Operating Systems Used </h2>
+
+- Windows 10 (21H2)
+
+
+
 <p>
 <img src="https://i.imgur.com/upyqEZc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
