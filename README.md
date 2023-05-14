@@ -1,7 +1,7 @@
 # Configuring-On-premises-Active-Directory-within-Azure-VMs
 
 <p>
-<img src="https://i.imgur.com/2oMXnpT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2oMXnpT.png" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 </p>
 
 
@@ -49,7 +49,7 @@ The screenshot above confirms that after enabling ICMPv4 on the firewall, we now
 <img src="https://i.imgur.com/jEHDGyt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-We can now start the process of installing active directory on the client 1 machine as shown above. 
+The image above illustrates us logging into our DC-1 vm and starting the process of installing Active Directory domain services and soon after promoting it as our Domain controller.
 </p>
 <br />
 
@@ -57,7 +57,7 @@ We can now start the process of installing active directory on the client 1 mach
 <img src="https://i.imgur.com/GrSr2mn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Using the our domain credentials we will loging to the client-1 machine.
+After restarting DC-1 we will now log back into the now converted domain controller using the our domain credentials that we created when setting up a new forest in the domain, in our example called "marcosdomain.com/labuser"
 </p>
 <br />
 
@@ -65,7 +65,7 @@ Using the our domain credentials we will loging to the client-1 machine.
 <img src="https://i.imgur.com/y3HYotR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this section, we have started a continuous ping by using the "-t" command and specifying the private IP address of VM2. The purpose of this step is to ensure a constant flow of traffic between the two virtual machines, which will aid in our troubleshooting efforts. In the next step, we will be modifying the firewall settings of VM2 to block incoming traffic using the ICMP protocol. Specifically, we will be preventing any new ping requests from being initiated towards VM2. This will allow us to test the effectiveness of the firewall settings and ensure that incoming traffic is being blocked as intended.
+Now after our domain controller is now online we will create a couple of organizational units inside of active directory, you can find those new folders at the top in this image being titled _ADMIN & _EMPLEYEES.
 </p>
 <br />
 
@@ -73,15 +73,14 @@ In this section, we have started a continuous ping by using the "-t" command and
 <img src="https://i.imgur.com/1Umkdmk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After modifying the firewall settings in VM2 to block incoming traffic using the ICMP protocol, we can now observe that the continuous ping from VM1 has come to a stop. This confirms that the firewall is functioning as intended, and incoming traffic using the specified protocol is now being blocked. This is a critical step in ensuring the security and integrity of our virtual environment and protecting it against potential threats and vulnerabilities. By successfully blocking incoming traffic, we can safeguard our network and data from malicious attacks and unauthorized access. With the firewall settings in place, we can continue our exploration of the virtual environment with greater confidence and peace of mind.
-</p>
+As is it bad practice to use generic users to perfrom administrative task in the real world, we will now promote a user to admin and in our scenerio the new admin will be called "Jane admin" the screenhot above showcases the creation of such.
 <br />
 
 <p>
-<img src="https://i.imgur.com/a8F3lAO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RVDbFNn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this section, we will be using the SSH command in PowerShell to establish a remote connection to VM2 from VM1. This will allow us to access and modify the settings and configurations of VM2 from a remote location. SSH is a secure protocol that provides encrypted communication between two systems, making it an ideal choice for remote access and administration. 
+Now that we promoted "Jane to admin we will now logg off and log back in using janes admin credentials.
 </p>
 <br />
 
