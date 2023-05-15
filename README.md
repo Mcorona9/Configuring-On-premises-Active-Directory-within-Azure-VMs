@@ -1,5 +1,6 @@
 # Deploying Active Directory (on premises) and Creating Users
 
+<p align="center">
 <p>
 <img src="https://i.imgur.com/2oMXnpT.png" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 </p>
