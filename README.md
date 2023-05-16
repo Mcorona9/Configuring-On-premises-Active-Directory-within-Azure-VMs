@@ -131,8 +131,9 @@ To confirm whether normal users can RDP into Client-1, we will employ a PowerShe
 <img src="https://i.imgur.com/4dCZ48E.png" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
 As you can see, we were able to select a random user from our user generation script, and they were able to log in using their own credentials
-that concludes this lengthy lab. Thank you if you made it this far.
+that concludes this lengthy lab. Thank you if you made it this far.(The powershell script utlized to creat thousands of users was provided by Josh Madakor my intructor.)
 
 </p>
 <br />
