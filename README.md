@@ -2,11 +2,11 @@
 
 <p align="center">
 <p>
-<br />
+<p align="center">
   <img src="https://i.imgur.com/2oMXnpT.png" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 </p>
 
-
+<p align="center">
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines)
@@ -14,13 +14,13 @@
 - Powershell
 - Active directory services 
 
-
+<p align="center">
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2)
 - Windows Server 2022
 
-
+<p align="center">
 <p>
 <img src="https://i.imgur.com/JfZE9ed.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
